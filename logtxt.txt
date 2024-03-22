@@ -1,0 +1,422 @@
+st=#
+st=# \i ./downloads/zd12.sql                            DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE
+DROP TABLE                                              DROP TABLE
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+           List of relations
+ Schema |    Name     | Type  |  Owner
+--------+-------------+-------+---------
+ public | course      | table | u0_a348
+ public | exam_result | table | u0_a348
+ public | exam_sheet  | table | u0_a348
+ public | phone_list  | table | u0_a348
+ public | st_group    | table | u0_a348
+ public | students    | table | u0_a348
+ public | teacher     | table | u0_a348
+(7 rows)
+
+    teachername
+-------------------
+ Charles Spencer
+ Christopher Mills
+ David Greenwood
+ Mary James
+ Paul Hill
+(5 rows)
+
+         coursetitle
+------------------------------
+ Text processing
+ Machine Learning
+ Information retrieval
+ Image processing
+ Data storage
+ Data processing and analysis
+ Artificial intelligence
+(7 rows)
+
+         coursetitle
+------------------------------
+ Data processing and analysis
+ Image processing
+ Text processing
+(3 rows)
+
+ studentid |        avg
+-----------+--------------------
+    345586 | 5.0000000000000000
+    345567 | 5.0000000000000000
+    345570 | 4.5000000000000000
+    345575 | 3.5000000000000000
+    345584 | 4.5000000000000000
+    345576 | 3.5000000000000000
+    345579 | 4.0000000000000000
+    345581 | 5.0000000000000000
+    345572 | 4.0000000000000000
+    345583 | 3.5000000000000000
+    345574 | 5.0000000000000000
+    345580 | 4.6666666666666667
+    345588 | 4.0000000000000000
+    345571 | 2.5000000000000000
+    345587 | 3.0000000000000000
+    345573 | 4.5000000000000000
+    345569 | 3.5000000000000000
+    345577 | 4.5000000000000000                             345568 | 3.5000000000000000                             345582 | 3.5000000000000000
+    345585 | 2.5000000000000000                             345578 | 2.5000000000000000
+(22 rows)
+
+ studentid | count
+-----------+-------                                         345586 |     1
+    345567 |     2
+    345570 |     2                                          345575 |     2
+    345584 |     2                                          345576 |     2                                          345579 |     2                                          345581 |     2
+    345572 |     2
+    345583 |     2
+    345574 |     2
+    345580 |     3                                          345588 |     1
+    345571 |     2                                          345587 |     1
+    345573 |     2
+    345569 |     2
+    345577 |     2                                          345568 |     2
+    345582 |     2
+    345585 |     2
+    345578 |     2
+(22 rows)
+
+ studentid | count
+-----------+-------
+    345567 |     1
+    345568 |     2
+    345569 |     2
+    345570 |     2
+    345571 |     2
+    345572 |     2
+    345573 |     2
+    345574 |     1
+    345575 |     2                                          345576 |     2
+    345577 |     2
+    345578 |     2
+    345579 |     2
+    345580 |     2
+    345581 |     1
+    345582 |     2
+    345583 |     2
+    345584 |     2
+    345585 |     2
+    345586 |     1
+    345587 |     1
+    345588 |     1
+(22 rows)
+
+ studentid
+-----------
+    345586
+    345567
+    345581
+    345574
+(4 rows)
+
+  studentname
+---------------
+ Emily Perry
+ John Smith
+ David Scott
+ Helen Larsson
+(4 rows)
+
+    teachername    |  examdate  | classroom
+-------------------+------------+-----------
+ Christopher Mills | 2020-01-25 |      2408
+ Mary James        | 2020-01-27 |      2408
+ David Greenwood   | 2020-01-28 |      2410
+ Paul Hill         | 2020-01-26 |      2411
+ Charles Spencer   | 2020-01-24 |      2412
+ Christopher Mills | 2020-01-25 |      2410
+ Mary James        | 2020-01-27 |      2410
+ David Greenwood   | 2020-01-27 |      2410
+ David Greenwood   | 2020-01-28 |      2411
+ Paul Hill         | 2020-01-28 |
+(10 rows)
+
+  studentname
+----------------
+ Lily Brown
+ Matthew Wilson
+ Josie Reed
+ Ethan Morris
+ Thomas Wood
+ Sara Murphy
+(6 rows)
+
+         coursetitle          |  examdate  | classroom
+------------------------------+------------+-----------
+ Data storage                 | 2020-01-25 |      2408
+ Machine Learning             | 2020-01-27 |      2408
+ Data processing and analysis | 2020-01-28 |      2410
+ Data storage                 | 2020-01-26 |      2411
+ Machine Learning             | 2020-01-24 |      2412
+ Data processing and analysis | 2020-01-25 |      2410
+ Artificial intelligence      | 2020-01-27 |      2410
+ Data storage                 | 2020-01-27 |      2410
+ Machine Learning             | 2020-01-28 |      2411
+ Data processing and analysis | 2020-01-28 |
+(10 rows)
+
+         coursetitle          |  examdate  | classroom
+------------------------------+------------+-----------
+ Data storage                 | 2020-01-25 |      2408
+ Machine Learning             | 2020-01-27 |      2408
+ Data processing and analysis | 2020-01-28 |      2410
+ Data storage                 | 2020-01-26 |      2411
+ Machine Learning             | 2020-01-24 |      2412
+ Data processing and analysis | 2020-01-25 |      2410
+ Artificial intelligence      | 2020-01-27 |      2410
+ Data storage                 | 2020-01-27 |      2410
+ Machine Learning             | 2020-01-28 |      2411
+ Data processing and analysis | 2020-01-28 |
+(10 rows)
+
+   studentname    | grade
+------------------+-------
+ John Smith       |     5
+ John Smith       |     5
+ William Johnson  |     3
+ William Johnson  |     4
+ Lily Brown       |     5
+ Lily Brown       |     2
+ Dan Black        |     4
+ Dan Black        |     5
+ Matthew Wilson   |     3
+ Matthew Wilson   |     2
+ Jack Lewis       |     5
+ Jack Lewis       |     3
+ Cindy Clark      |     5
+ Cindy Clark      |     4
+ Helen Larsson    |     5
+ Helen Larsson    |     5
+ Lucy Brooks      |     3
+ Lucy Brooks      |     4
+ Josie Reed       |     5
+ Josie Reed       |     2
+ Harry Morgan     |     4
+ Harry Morgan     |     5
+ Ethan Morris     |     3
+ Ethan Morris     |     2
+ Michael Young    |     5
+ Michael Young    |     3
+ Alexander Wright |     5
+ Alexander Wright |     4
+ David Scott      |     5
+ David Scott      |     5
+ Charles Barnett  |     3
+ Charles Barnett  |     4
+ Thomas Wood      |     5
+ Thomas Wood      |     2
+ George Jenkins   |     4
+ George Jenkins   |     5
+ Sara Murphy      |     3
+ Sara Murphy      |     2
+ Emily Perry      |     5
+ Megan Cooper     |     3
+ Alexander Wright |     5
+ Barbara Nelson   |     4
+(42 rows)
+
+   studentname    | grade
+------------------+-------
+ John Smith       |     5
+ John Smith       |     5
+ William Johnson  |     3
+ William Johnson  |     4
+ Lily Brown       |     5
+ Lily Brown       |     2
+ Dan Black        |     4
+ Dan Black        |     5
+ Matthew Wilson   |     3
+ Matthew Wilson   |     2
+ Jack Lewis       |     5
+ Jack Lewis       |     3
+ Cindy Clark      |     5
+ Cindy Clark      |     4
+ Helen Larsson    |     5
+ Helen Larsson    |     5
+ Lucy Brooks      |     3
+ Lucy Brooks      |     4
+ Josie Reed       |     5
+ Josie Reed       |     2
+ Harry Morgan     |     4
+ Harry Morgan     |     5
+ Ethan Morris     |     3
+ Ethan Morris     |     2
+ Michael Young    |     5
+ Michael Young    |     3
+ Alexander Wright |     5
+ Alexander Wright |     4
+ David Scott      |     5
+ David Scott      |     5
+ Charles Barnett  |     3
+ Charles Barnett  |     4
+ Thomas Wood      |     5
+ Thomas Wood      |     2
+ George Jenkins   |     4
+ George Jenkins   |     5
+ Sara Murphy      |     3
+ Sara Murphy      |     2
+ Emily Perry      |     5
+ Megan Cooper     |     3
+ Alexander Wright |     5
+ Barbara Nelson   |     4
+(42 rows)
+
+INSERT 0 1
+ teacherid |    teachername    |      position
+-----------+-------------------+---------------------
+         1 | Christopher Mills | Professor
+         2 | Mary James        | Assistant Professor
+         3 | David Greenwood   | Assistant Professor
+         4 | Paul Hill         | Professor
+         5 | Charles Spencer   | Assistant Professor
+         6 | Ben Bars          | Assistant Professor
+(6 rows)
+
+UPDATE 1
+ teacherid |    teachername    |      position
+-----------+-------------------+---------------------
+         1 | Christopher Mills | Professor
+         2 | Mary James        | Assistant Professor
+         3 | David Greenwood   | Assistant Professor
+         4 | Paul Hill         | Professor
+         5 | Charles Spencer   | Assistant Professor
+         6 | Ben Bars          | Professor
+(6 rows)
+
+DELETE 1
+ teacherid |    teachername    |      position
+-----------+-------------------+---------------------
+         1 | Christopher Mills | Professor
+         2 | Mary James        | Assistant Professor
+         3 | David Greenwood   | Assistant Professor
+         4 | Paul Hill         | Professor
+         5 | Charles Spencer   | Assistant Professor
+(5 rows)
+
+st=#
