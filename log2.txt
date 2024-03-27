@@ -1,0 +1,212 @@
+Current Mongosh Log ID:	660362ac807a65a2d730d271
+Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.5
+Using MongoDB:		7.0.6
+Using Mongosh:		2.1.5
+mongosh 2.2.1 is available for download: https://www.mongodb.com/try/download/shell
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+------
+   The server generated these startup warnings when booting
+   2024-03-27T00:13:33.162+03:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> switched to db kurbdb
+kurbdb> 
+kurbdb> { ok: 1 }
+kurbdb> admin   40.00 KiB
+config  60.00 KiB
+kurbdb   8.00 KiB
+local   72.00 KiB
+kurbdb> add to users:
+
+kurbdb> {
+  acknowledged: true,
+  insertedId: ObjectId('660362ac807a65a2d730d272')
+}
+kurbdb> ... ... {
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('660362ac807a65a2d730d273'),
+    '1': ObjectId('660362ac807a65a2d730d274')
+  }
+}
+kurbdb> 
+kurbdb> users:
+
+kurbdb> [
+  { _id: ObjectId('660362ac807a65a2d730d272'), userId: 1, login: 'u1' },
+  { _id: ObjectId('660362ac807a65a2d730d273'), userId: 2, login: 'u2' },
+  { _id: ObjectId('660362ac807a65a2d730d274'), userId: 3, login: 'u3' }
+]
+kurbdb> 
+kurbdb> { ok: 1 }
+kurbdb> admin   40.00 KiB
+config  60.00 KiB
+kurbdb  16.00 KiB
+local   72.00 KiB
+kurbdb> 
+kurbdb> insert into messages:
+
+kurbdb> ... ... ... ... ... {
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('660362ac807a65a2d730d275'),
+    '1': ObjectId('660362ac807a65a2d730d276'),
+    '2': ObjectId('660362ac807a65a2d730d277'),
+    '3': ObjectId('660362ac807a65a2d730d278'),
+    '4': ObjectId('660362ac807a65a2d730d279')
+  }
+}
+kurbdb> 
+kurbdb> messages:
+
+kurbdb> [
+  { _id: ObjectId('660362ac807a65a2d730d272'), userId: 1, login: 'u1' },
+  { _id: ObjectId('660362ac807a65a2d730d273'), userId: 2, login: 'u2' },
+  { _id: ObjectId('660362ac807a65a2d730d274'), userId: 3, login: 'u3' }
+]
+kurbdb> 
+kurbdb> aggregate:
+
+kurbdb> ... ... ... ... ... ... ... ... ... [
+  {
+    _id: ObjectId('660362ac807a65a2d730d272'),
+    userId: 1,
+    login: 'u1',
+    userMsg: [
+      {
+        _id: ObjectId('660362ac807a65a2d730d275'),
+        userId: 1,
+        msg: 'msg1'
+      },
+      {
+        _id: ObjectId('660362ac807a65a2d730d278'),
+        userId: 1,
+        msg: 'msg4'
+      }
+    ]
+  },
+  {
+    _id: ObjectId('660362ac807a65a2d730d273'),
+    userId: 2,
+    login: 'u2',
+    userMsg: [
+      {
+        _id: ObjectId('660362ac807a65a2d730d277'),
+        userId: 2,
+        msg: 'msg3'
+      }
+    ]
+  },
+  {
+    _id: ObjectId('660362ac807a65a2d730d274'),
+    userId: 3,
+    login: 'u3',
+    userMsg: [
+      {
+        _id: ObjectId('660362ac807a65a2d730d276'),
+        userId: 3,
+        msg: 'msg2'
+      },
+      {
+        _id: ObjectId('660362ac807a65a2d730d279'),
+        userId: 3,
+        msg: 'msg5'
+      }
+    ]
+  }
+]
+kurbdb> 
+kurbdb> replace document:
+
+kurbdb> {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+kurbdb> 
+kurbdb> messages:
+
+kurbdb> [
+  { _id: ObjectId('660362ac807a65a2d730d275'), userId: 1, msg: 'msg1' },
+  { _id: ObjectId('660362ac807a65a2d730d276'), userId: 3, msg: 'msg2' },
+  { _id: ObjectId('660362ac807a65a2d730d277'), userId: 2, msg: 'msg3' },
+  { _id: ObjectId('660362ac807a65a2d730d278'), userId: 1, msg: 'msg4' },
+  {
+    _id: ObjectId('660362ac807a65a2d730d279'),
+    login: 'user_x',
+    msg: 'hello'
+  }
+]
+kurbdb> 
+kurbdb> updateOne:
+
+kurbdb> {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+kurbdb> 
+kurbdb> users:
+
+kurbdb> [
+  { _id: ObjectId('660362ac807a65a2d730d272'), userId: 1, login: 'u1' },
+  { _id: ObjectId('660362ac807a65a2d730d273'), userId: 2, login: 'u2' },
+  {
+    _id: ObjectId('660362ac807a65a2d730d274'),
+    userId: 3,
+    login: 'u3',
+    age: 28
+  }
+]
+kurbdb> 
+kurbdb> find and update
+
+kurbdb> { _id: ObjectId('660362ac807a65a2d730d273'), userId: 2, login: 'u2' }
+kurbdb> 
+kurbdb> users:
+
+kurbdb> [
+  { _id: ObjectId('660362ac807a65a2d730d272'), userId: 1, login: 'u1' },
+  {
+    _id: ObjectId('660362ac807a65a2d730d273'),
+    userId: 2,
+    login: 'u2',
+    age: 44
+  },
+  {
+    _id: ObjectId('660362ac807a65a2d730d274'),
+    userId: 3,
+    login: 'u3',
+    age: 28
+  }
+]
+kurbdb> 
+kurbdb> delete document:
+
+kurbdb> { acknowledged: true, deletedCount: 1 }
+kurbdb> 
+kurbdb> messages:
+
+kurbdb> [
+  { _id: ObjectId('660362ac807a65a2d730d275'), userId: 1, msg: 'msg1' },
+  { _id: ObjectId('660362ac807a65a2d730d276'), userId: 3, msg: 'msg2' },
+  { _id: ObjectId('660362ac807a65a2d730d277'), userId: 2, msg: 'msg3' },
+  {
+    _id: ObjectId('660362ac807a65a2d730d279'),
+    login: 'user_x',
+    msg: 'hello'
+  }
+]
+kurbdb> 
+kurbdb> delete db:
+
+kurbdb> true
+kurbdb> true
+kurbdb> { ok: 1, dropped: 'kurbdb' }
+kurbdb> 
